@@ -6,7 +6,7 @@ let btntwo = document.querySelector(".btn-danger")
 
 btn.onclick = () => {
 parametr.classList.contains("action")
-        parametr.classList.remove("action")
+        parametr.classList.remove("action", "visually-hidden")
         parametr.style.transition ="1.5s";
         btn.classList.add("visually-hidden");
         btntwo.classList.remove("visually-hidden");
@@ -15,7 +15,7 @@ parametr.classList.contains("action")
 }
 
 btntwo.onclick = () => {
-    parametr.classList.add("action")
+    parametr.classList.add("action","visually-hidden")
     parametr.style.transition ="1.5s";
 
     btntwo.classList.add("visually-hidden")
